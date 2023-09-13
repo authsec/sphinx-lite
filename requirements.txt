@@ -1,0 +1,21 @@
+matplotlib
+sphinx @ git+https://github.com/sphinx-doc/sphinx@v7.2.5
+sphinx-rtd-theme @ git+https://github.com/readthedocs/sphinx_rtd_theme@1.3.0
+sphinxcontrib.plantuml
+sphinxcontrib.nwdiag
+sphinxcontrib.actdiag
+sphinxcontrib.blockdiag
+sphinx-diagrams
+sphinxcontrib.seqdiag
+sphinxcontrib-mermaid
+sphinxcontrib.bibtex
+sphinx-revealjs
+sphinxjp.themes.revealjs
+sphinxcontrib-textstyle
+sphinxcontrib-tikz
+sphinxcontrib-excel-table
+sphinxcontrib-excel-table-plus
+sphinxcontrib-exceltable
+sphinxcontrib-confluencebuilder
+sphinxcontrib-versioning
+sphinx-exec-directive
