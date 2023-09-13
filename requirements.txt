@@ -19,3 +19,5 @@ sphinxcontrib-exceltable
 sphinxcontrib-confluencebuilder
 sphinxcontrib-versioning
 sphinx-exec-directive
+groundwork-sphinx-theme
+sphinx-book-theme
