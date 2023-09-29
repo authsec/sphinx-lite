@@ -1,9 +1,8 @@
 FROM sphinxdoc/sphinx-latexpdf:7.1.2
-LABEL maintainer="Jens Frey <jens.frey@coffeecrew.org>" Version="2023-09-17"
+LABEL maintainer="Jens Frey <jens.frey@coffeecrew.org>" Version="2023-09-29"
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update 
-RUN apt-get -y install git gcc g++ python3-dev wget openjdk-17-jdk-headless plantuml docutils
+RUN apt-get update && apt-get -y install git gcc g++ python3-dev wget openjdk-17-jdk-headless plantuml docutils
 
 WORKDIR /usr/share/plantuml/
 RUN rm -rf plantuml.jar && \
