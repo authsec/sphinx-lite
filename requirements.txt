@@ -25,3 +25,7 @@ groundwork-sphinx-theme
 esbonio
 sphinx-tags
 sphinx-design
+sphinx-needs
+sphinxcontrib-newsfeed
+ablog
+git+https://github.com/pydata/pydata-sphinx-theme.git@v0.14.1
