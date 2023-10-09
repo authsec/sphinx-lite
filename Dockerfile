@@ -14,4 +14,7 @@ ADD requirements.txt /docs
 RUN pip3 install -r requirements.txt
 
 ENV PYTHONPATH=/usr/local/lib/python3.11/site-packages/
+ENV HTTP_SERVER_PORT="8000"
+
+RUN echo "alias start_server=\"{ python -m http.server \${HTTP_SERVER_PORT:-8000} --bind 0.0.0.0 -d build/html/ 2>&1; } > /dev/null &\"" >> ~/.bashrc
 WORKDIR /workspaces
