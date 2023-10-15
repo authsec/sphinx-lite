@@ -29,7 +29,8 @@ jobs:
       - 
         name: Set Docker Build Version
         id: version
-        run: echo "CONTAINER_VERSION=${GITHUB_REF#refs/heads/}" >> "$GITHUB_ENV"
+        run: |
+          echo "CONTAINER_VERSION=${GITHUB_REF#refs/heads/}" >> "$GITHUB_ENV"
 
       -
         name: Build and push
@@ -38,4 +39,4 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: authsec/sphinx-lite:${CONTAINER_VERSION}
+          tags: authsec/sphinx-lite:$CONTAINER_VERSION
