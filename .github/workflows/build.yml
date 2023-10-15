@@ -25,6 +25,12 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - 
+        name: Set Docker Build Version
+        id: version
+        run: echo "CONTAINER_VERSION=${GITHUB_REF#refs/heads/}" >> "$GITHUB_ENV"
+
       -
         name: Build and push
         id: docker_build
@@ -32,4 +38,4 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: authsec/sphinx-lite:latest
+          tags: authsec/sphinx-lite:${CONTAINER_VERSION}
