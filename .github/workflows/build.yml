@@ -38,4 +38,4 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: authsec/sphinx-lite:$DOCKER_VERSION
+          tags: authsec/sphinx-lite:${{ env.DOCKER_VERSION }}
