@@ -27,9 +27,13 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - 
-        name: Set Docker Build Version
+        name: Set Docker Build Versions
         id: version
-        run: echo "DOCKER_VERSION=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+        run: |
+          full_docker_version=${GITHUB_REF#refs/heads/}
+          major_version=$(echo $full_docker_version | cut -d '.' -f 1)
+          echo "DOCKER_VERSION=${full_docker_version}" >> $GITHUB_ENV
+          echo "DOCKER_MAJOR_VERSION=${major_version}" >> $GITHUB_ENV
 
       -
         name: Build and push
@@ -38,4 +42,7 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: authsec/sphinx-lite:${{ env.DOCKER_VERSION }}
+          tags: |
+            authsec/sphinx-lite:${{ env.DOCKER_VERSION }}
+            authsec/sphinx-lite:${{ env.DOCKER_MAJOR_VERSION }}
+            authsec/sphinx-lite:latest
