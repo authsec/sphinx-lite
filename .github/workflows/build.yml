@@ -44,5 +44,6 @@ jobs:
           push: true
           tags: |
             authsec/sphinx-lite:${{ env.DOCKER_VERSION }}
+            authsec/sphinx-lite:${{ env.DOCKER_VERSION }}.${{ github.run_number }}
             authsec/sphinx-lite:${{ env.DOCKER_MAJOR_VERSION }}
             authsec/sphinx-lite:latest
