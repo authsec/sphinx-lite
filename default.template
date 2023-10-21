@@ -4,7 +4,7 @@ server {
 
        server_name localhost;
 
-       root /workspaces/csm/build/html;
+       root ##SERVER_BUILD_DIR##;
        index index.html;
 
        location / {
