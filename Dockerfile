@@ -20,3 +20,7 @@ ADD default.template /etc/nginx/templates/default.template
 WORKDIR /workspaces
 
 RUN echo "alias rs=\"sed -e 's|##SERVER_PORT##|\${HTTP_SERVER_PORT:-8000}|g' -e 's|##SERVER_BUILD_DIR##|/workspaces/\$(ls /workspaces)/build/html|g' /etc/nginx/templates/default.template > /etc/nginx/sites-available/default && service nginx restart\"" >> ~/.bashrc
+
+ADD init-sphinx-lite.sh /etc/init-sphinx-lite.sh
+RUN chmod 0755 /etc/init-sphinx-lite.sh
+RUN /etc/init-sphinx-lite.sh
