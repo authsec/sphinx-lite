@@ -4,6 +4,7 @@ server {
 
        server_name localhost;
 
+       disable_symlinks off;
        root ##SERVER_BUILD_DIR##;
        index index.html;
 
