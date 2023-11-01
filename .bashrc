@@ -17,5 +17,8 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 alias rs="sed -e 's|##SERVER_PORT##|${HTTP_SERVER_PORT:-8000}|g' -e 's|##SERVER_BUILD_DIR##|${HTTP_SERVER_DIR:-/workspaces/docs/build/html}|g' /etc/nginx/templates/default.template > /etc/nginx/sites-available/default && service nginx restart"
-alias t="topydo"
+t() {
+    topydo -c ${TOPYDO_CONFIG_FILE:-/etc/topydo.conf} "$@"
+}
+export -f t
 alias ta="t add"

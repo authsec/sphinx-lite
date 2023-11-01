@@ -30,4 +30,4 @@ sphinxcontrib-newsfeed
 ablog
 git+https://github.com/pydata/pydata-sphinx-theme.git@v0.14.1
 poetry
-topydo
+topydo[columns,prompt]

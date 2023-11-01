@@ -1,5 +1,5 @@
 FROM sphinxdoc/sphinx-latexpdf:7.1.2
-LABEL maintainer="Jens Frey <jens.frey@coffeecrew.org>" Version="2023-10-20"
+LABEL maintainer="Jens Frey <jens.frey@coffeecrew.org>" Version="2023-11-01"
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
@@ -20,3 +20,4 @@ ADD default.template /etc/nginx/templates/default.template
 WORKDIR /workspaces
 
 COPY .bashrc /root/.bashrc
+COPY topydo.conf /etc/topydo.conf
