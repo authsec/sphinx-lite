@@ -2,6 +2,9 @@ name: Build Sphinx Lite Image
 
 on:
   push:
+    branches: 
+      - '*'
+      - '!main'
 
 jobs:
   buildx:
