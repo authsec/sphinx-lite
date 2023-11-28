@@ -1,5 +1,5 @@
 FROM sphinxdoc/sphinx-latexpdf:7.1.2
-LABEL maintainer="Jens Frey <jens.frey@coffeecrew.org>" Version="2023-11-01"
+LABEL maintainer="Jens Frey <jens.frey@coffeecrew.org>" Version="2023-11-28"
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
