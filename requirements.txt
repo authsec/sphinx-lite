@@ -32,3 +32,4 @@ git+https://github.com/pydata/pydata-sphinx-theme.git@v0.14.4
 poetry
 topydo[columns,prompt]
 rinohtype
+restructuredtext-lint
