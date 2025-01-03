@@ -1,10 +1,10 @@
 matplotlib
-sphinx-rtd-theme @ git+https://github.com/readthedocs/sphinx_rtd_theme@3.0.1
+sphinx-rtd-theme @ git+https://github.com/readthedocs/sphinx_rtd_theme@3.0.2
 sphinxcontrib.plantuml
 sphinxcontrib.nwdiag
 sphinxcontrib.actdiag
 sphinxcontrib.blockdiag
-#sphinx-diagrams
+sphinx-diagrams
 sphinxcontrib.seqdiag
 sphinxcontrib-mermaid
 sphinxcontrib.bibtex
@@ -27,7 +27,7 @@ sphinx-design
 sphinx-needs
 sphinxcontrib-newsfeed
 ablog
-git+https://github.com/pydata/pydata-sphinx-theme.git@v0.16.0
+git+https://github.com/pydata/pydata-sphinx-theme.git@v0.16.1
 poetry
 topydo[columns,prompt]
 rinohtype

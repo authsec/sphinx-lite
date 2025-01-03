@@ -14,10 +14,11 @@ WORKDIR /docs
 ADD requirements.txt /docs
 RUN pip install --upgrade pip && pip3 install -r requirements.txt
 
-ENV PYTHONPATH=/usr/local/lib/python3.11/site-packages/
 ADD default.template /etc/nginx/templates/default.template
 
 WORKDIR /workspaces
 
 COPY .bashrc /root/.bashrc
 COPY topydo.conf /etc/topydo.conf
+
+ENV LC_ALL=C
