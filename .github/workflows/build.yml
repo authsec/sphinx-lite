@@ -1,4 +1,4 @@
-name: Build Sphinx Lite Image
+name: Build Sphinx-Lite Docker Image
 
 on:
   push:
