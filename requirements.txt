@@ -34,3 +34,4 @@ rinohtype
 restructuredtext-lint
 bibtexparser
 myst-parser
+docxbuilder
