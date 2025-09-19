@@ -35,3 +35,4 @@ restructuredtext-lint
 bibtexparser
 myst-parser
 docxbuilder
+sphinx-asciidoc
