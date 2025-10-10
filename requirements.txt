@@ -36,4 +36,4 @@ bibtexparser
 myst-parser
 docxbuilder
 sphinx-asciidoc
-sphix-jinja2
+sphinx-jinja2
