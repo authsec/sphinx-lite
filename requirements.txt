@@ -37,3 +37,4 @@ myst-parser
 docxbuilder
 sphinx-asciidoc
 sphinx-jinja2
+sphinxcontrib-drawio
