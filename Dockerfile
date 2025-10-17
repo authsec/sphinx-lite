@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG DRAWIO_VER=28.2.5
 
 RUN apt-get update && \
-    apt-get -y install git gcc g++ python3-dev wget openjdk-17-jdk-headless plantuml docutils nginx
+    apt-get -y install git git-lfs gcc g++ python3-dev wget openjdk-17-jdk-headless plantuml docutils nginx
 
 WORKDIR /usr/share/plantuml/
 RUN rm -rf plantuml.jar && \
