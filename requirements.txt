@@ -38,3 +38,4 @@ docxbuilder
 sphinx-asciidoc @ git+https://github.com/authsec/sphinx_asciidoc
 sphinx-jinja2
 sphinxcontrib-drawio
+sphinxawesome-theme

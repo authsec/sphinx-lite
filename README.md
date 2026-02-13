@@ -3,7 +3,7 @@
 To locally build the container execute the following build command:
 
 ```
-docker build . -t authsec/sphinx-lite 
+podman build . -t authsec/sphinx-lite 
 ```
 
 # Usage 
