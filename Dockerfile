@@ -14,7 +14,7 @@ RUN rm -rf plantuml.jar && \
 
 
 # Install required dependencies for draw.io
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get install -y --no-install-recommends \
     wget curl xvfb \
     libgtk-3-0 libnss3 libxss1 libasound2 libgbm1 libx11-xcb1 \
     libxcomposite1 libxrandr2 libxdamage1 libxi6 libxtst6 libglib2.0-0 \
